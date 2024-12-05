@@ -1,0 +1,95 @@
+#include<stdio.h> 
+void main(){
+char vowel;
+printf("Enter the alphabet : "); 
+scanf("%c",&vowel);
+if(vowel=='a'||vowel=='e'||vowel=='i'||vowel=='o'||vowel=='u')
+{
+printf("Its vowel\n");
+}
+else
+{
+printf("Its consonant\n");
+}
+}
+
+
+#include <stdio.h>
+int main() {
+  int n;
+  double arr[100];
+  printf("Enter the number of elements (1 to 100): ");
+  scanf("%d", &n);
+  for (int i = 0; i < n; ++i) {
+    printf("Enter number%d: ", i + 1);
+    scanf("%lf", &arr[i]);
+  }
+  for (int i = 1; i < n; ++i) {
+    if (arr[0] < arr[i]) {
+      arr[0] = arr[i];
+    }
+  }
+
+  printf("Largest element = %.2lf", arr[0]);
+
+  return 0;
+}
+
+
+#include<stdio.h> 
+void main() {
+int year;
+printf("Enter a year: "); 
+scanf("%d", &year);
+if((year%4==0) && ((year%400==0) || (year%100!=0)))
+{
+printf("IT is a leap year\n");
+} else {
+printf("IT is not a leap year\n");
+}
+}
+
+
+#include<stdio.h> 
+void main() {
+int a; 
+float b; 
+char c; 
+double d;
+printf("size of int = %ld\nsize of float = %ld\nsize of char = %ld\nsize of double =
+%ld\n",sizeof(a),sizeof(b),sizeof(c),sizeof(d));
+}
+
+
+#include <stdio.h> 
+void main()
+{
+int i,fact=1,num; 
+printf("Enter a number: "); 
+scanf("%d", &num);
+for (int i = 1; i <= num; i++) { 
+fact=fact*i;
+}
+printf("Factorial is: %d\n", fact);
+}
+
+
+#include<stdio.h> 
+void main(){ 
+FILE*ptr;
+char ch;
+char filename[50];
+printf("Enter the file name : "); 
+scanf("%s",filename); 
+ptr=fopen(filename,"r"); 
+if(NULL==ptr){
+printf("File can't be opened");
+}
+printf("content of the file are \n"); 
+do{
+ch=fgetc(ptr); 
+printf("%c",ch);
+}
+while(ch!= EOF); 
+fclose(ptr);
+}
