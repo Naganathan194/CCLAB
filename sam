@@ -6,4 +6,4 @@ sudo bash minione
 sudo adduser username
 sudo apt install build-essential dkms linux-headers-$(username -r)$
 
-
+sudo apt-get install gcc
