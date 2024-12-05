@@ -1,0 +1,9 @@
+cd Downloads/
+wget 'https://github.com/OpenNebula/minione/releases/latest/download/minione'
+sudo apt install openssh-server
+sudo bash minione
+
+sudo adduser username
+sudo apt install build-essential dkms linux-headers-$(username -r)$
+
+sudo apt-get install gcc
