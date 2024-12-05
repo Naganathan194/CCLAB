@@ -1,0 +1,4 @@
+cd Downloads/
+wget 'https://github.com/OpenNebula/minione/releases/latest/download/minione'
+sudo apt install openssh-server
+sudo bash minione
